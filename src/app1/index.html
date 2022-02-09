@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>app1</title>
+</head>
+<body>
+  <div id="root"></div>
+  <!--
+  <script type="module" src="./index.js"></script>
+  -->
+  <!--
+  <script type="module" src="/build/rollup/app.js"></script>
+  -->
+  <script type="webbundle">
+    {
+      "source": "http://localhost:8080/build/wbn2/app1.wbn",
+      "resources": [
+        "http://localhost:8080/index.js",
+        "http://localhost:8080/m1.js",
+        "http://localhost:8080/m2.js",
+        "http://localhost:8080/m1_1.js"
+      ]
+    }
+  </script>
+  <script type="module" src="http://localhost:8080/index.js"></script>
+</body>
+</html>

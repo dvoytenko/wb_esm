@@ -1,0 +1,26 @@
+{
+  "name": "wb_esm",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "rollup": "rollup -c rollup.config.js",
+    "rollup:watch": "rollup -c rollup.config.js -w",
+    "wbn": "wbn --dir src/app1 --baseURL http://localhost:8080/ --output build/wbn2/app1.wbn",
+    "start": "http-server --mimetypes mime.types"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvoytenko/wb_esm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dvoytenko/wb_esm/issues"
+  },
+  "homepage": "https://github.com/dvoytenko/wb_esm#readme",
+  "devDependencies": {
+    "http-server": "^14.1.0",
+    "rollup": "^2.67.1",
+    "wbn": "^0.0.6"
+  }
+}
