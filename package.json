@@ -5,8 +5,8 @@
   "scripts": {
     "rollup": "rollup -c rollup.config.js",
     "rollup:watch": "rollup -c rollup.config.js -w",
-    "wbn": "wbn --dir src/app1 --baseURL http://localhost:8080/ --output build/wbn2/app1.wbn",
-    "start": "http-server --mimetypes mime.types"
+    "wbn": "wbn --dir src/app1 --baseURL http://localhost:8080/build/wbn2/app1.wbn/ --output build/wbn2/app1.wbn",
+    "server": "node server/server.mjs"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/dvoytenko/wb_esm#readme",
   "devDependencies": {
+    "express": "^4.17.2",
     "http-server": "^14.1.0",
     "rollup": "^2.67.1",
     "wbn": "^0.0.6"
