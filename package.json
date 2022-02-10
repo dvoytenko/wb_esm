@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "codegen:app2": "node codegen/app2.mjs",
     "rollup": "rollup -c rollup.config.js",
     "rollup:watch": "rollup -c rollup.config.js -w",
     "wbn": "wbn --dir src/app1 --baseURL http://localhost:8080/build/wbn2/app1.wbn/ --output build/wbn2/app1.wbn",
