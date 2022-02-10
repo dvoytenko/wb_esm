@@ -6,7 +6,9 @@
     "codegen:app2": "node codegen/app2.mjs",
     "rollup": "rollup -c rollup.config.js",
     "rollup:watch": "rollup -c rollup.config.js -w",
-    "wbn": "wbn --dir src/app1 --baseURL http://localhost:8080/build/wbn2/app1.wbn/ --output build/wbn2/app1.wbn",
+    "wbn:app1": "wbn --dir src/app1 --baseURL http://localhost:8080/build/wbn2/app1.wbn/ --output build/wbn2/app1.wbn",
+    "wbn:app2": "wbn --dir src/app2 --baseURL http://localhost:8080/build/wbn2/app2.wbn/ --output build/wbn2/app2.wbn",
+    "build:app2": "npm run codegen:app2 && npm run rollup && npm run wbn:app2 && ls -l build/rollup/app2.js && ls -l build/wbn2/app2.wbn",
     "server": "node server/server.mjs"
   },
   "repository": {
